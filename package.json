@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Gantedavamsikrishna.github.io/vamsi-krishna",
   "dependencies": {
     "@react-pdf-viewer/core": "^3.12.0",
     "axios": "^1.8.4",
@@ -19,9 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
-    "homepage": "https://Gantedavamsikrishna/vamsi-krishna.git"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
