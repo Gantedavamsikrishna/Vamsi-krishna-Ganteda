@@ -25,7 +25,7 @@ const Resume = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <a
-                href="/assets/GantedaVamsiKrishna.pdf"
+                href="./assets/GantedaVamsiKrishna.pdf"
                 download="GantedaVamsiKrishna.pdf"
                 className="glow-button"
               >
@@ -45,7 +45,7 @@ const Resume = () => {
               <div className="w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl bg-white no-scrollbar" style={{height: 'auto', maxHeight: 'none'}}>
                 <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
                   <Viewer
-                    fileUrl="/assets/GantedaVamsiKrishna.pdf"
+                    fileUrl="./assets/GantedaVamsiKrishna.pdf"
                     defaultScale="PageWidth"
                     theme="light"
                     renderToolbar={null}

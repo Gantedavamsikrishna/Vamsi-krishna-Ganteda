@@ -6,7 +6,7 @@ export const projects = [
   {
     title: 'Etrack',
     description: 'Electric device tracking platform with real-time status monitoring, device countability, interactive dashboards, and complaint management.',
-    image: '/assets/Etrack.jpg',
+    image: './assets/Etrack.jpg',
     skills: ['MongoDB', 'Express', 'React', 'Node.js', 'JWT', 'Socket.io'],
     category: 'Web',
     github: 'https://github.com/Gantedavamsikrishna/Etrack_Management',
@@ -15,7 +15,7 @@ export const projects = [
   {
     title: 'Security Attendance System',
     description: 'A security attendance system that uses Thumb recognition to mark attendance of sucrity guards and staff.',
-    image: '/assets/Security.png',
+    image: '//Security.png',
     skills: ['ReactJS', 'Node.js', 'Express', 'Socket.io', 'MongoDB'],
     category: 'Web',
     github: 'https://github.com/Gantedavamsikrishna/Security-Attendance-System',
@@ -24,7 +24,7 @@ export const projects = [
   {
     title: 'Groomax',
     description: 'A petgrooming web Application for pet services and grooming advance bookings , full of glasse transparent modals.',
-    image: '/assets/groomax.png',
+    image: './assets/groomax.png',
     skills: ['HTML', 'CSS', 'javaScript', 'bootstrap', 'git','vercel'],
     category: 'Web',
     github: 'https://github.com',

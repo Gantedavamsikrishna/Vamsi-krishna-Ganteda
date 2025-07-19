@@ -99,7 +99,7 @@ const About = () => {
             >
               <div className="relative">
                 <img
-                  src="/assets/my24.png"
+                  src="./assets/my24.png"
                   alt="Profile"
                   className="w-full max-w-xs mx-auto rounded-2xl neon-shadow relative z-10"
                   style={{

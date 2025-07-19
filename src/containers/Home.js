@@ -156,7 +156,7 @@ const Home = () => {
                   <div className="w-64 h-40 bg-green-400/20 blur-2xl rounded-full" style={{background: 'radial-gradient(circle at 50% 80%, rgba(34,197,94,0.10) 0%, rgba(59,130,246,0.08) 100%)'}} />
                 </div>
                 <img
-                  src={"/assets/my24.png"}
+                  src={"./assets/my24.png"}
                   alt="Profile"
                   className="w-full max-w-xs mx-auto rounded-2xl neon-shadow relative z-10"
                   style={{
