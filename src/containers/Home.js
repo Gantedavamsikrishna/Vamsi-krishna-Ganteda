@@ -153,23 +153,35 @@ const Home = () => {
               <div className="relative flex justify-center items-center">
                 {/* Neon background bubble as true background */}
                 <div className="absolute inset-0 flex justify-center items-end z-0 pointer-events-none">
-                  <div className="w-64 h-40 bg-green-400/20 blur-2xl rounded-full" style={{background: 'radial-gradient(circle at 50% 80%, rgba(34,197,94,0.10) 0%, rgba(59,130,246,0.08) 100%)'}} />
+                  <div
+                    className="w-64 h-40 bg-green-400/20 blur-2xl rounded-full"
+                    style={{
+                      background:
+                        "radial-gradient(circle at 50% 80%, rgba(34,197,94,0.10) 0%, rgba(59,130,246,0.08) 100%)",
+                    }}
+                  />
                 </div>
                 <img
-                  src={"./assets/my24.png"}
+                  src={`${process.env.PUBLIC_URL}/assets/my24.png`}
                   alt="Profile"
                   className="w-full max-w-xs mx-auto rounded-2xl neon-shadow relative z-10"
                   style={{
-                    maskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
-                    WebkitMaskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)',
-                    filter: 'contrast(1.15) sepia(0.18) hue-rotate(-18deg)'
+                    maskImage:
+                      "linear-gradient(to bottom, black 85%, transparent 100%)",
+                    WebkitMaskImage:
+                      "linear-gradient(to bottom, black 80%, transparent 100%)",
+                    filter: "contrast(1.15) sepia(0.18) hue-rotate(-18deg)",
                   }}
                 />
               </div>
 
               <div className="text-left">
                 <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                  I'm a passionate full-stack developer with hands-on experience in building modern, responsive web applications using the MERN stack. My journey started with core web technologies and evolved through real-world projects and an internship focused on full-stack JavaScript development.
+                  I'm a passionate full-stack developer with hands-on experience
+                  in building modern, responsive web applications using the MERN
+                  stack. My journey started with core web technologies and
+                  evolved through real-world projects and an internship focused
+                  on full-stack JavaScript development.
                 </p>
 
                 <div className="mb-6">

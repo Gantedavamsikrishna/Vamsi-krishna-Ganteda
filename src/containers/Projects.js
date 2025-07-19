@@ -1,34 +1,37 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import ProjectCard from '../components/ProjectCard';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import ProjectCard from "../components/ProjectCard";
 
 export const projects = [
   {
-    title: 'Etrack',
-    description: 'Electric device tracking platform with real-time status monitoring, device countability, interactive dashboards, and complaint management.',
-    image: './assets/Etrack.jpg',
-    skills: ['MongoDB', 'Express', 'React', 'Node.js', 'JWT', 'Socket.io'],
-    category: 'Web',
-    github: 'https://github.com/Gantedavamsikrishna/Etrack_Management',
-    demo: 'https://etrack-student-ui.vercel.app/'
+    title: "Etrack",
+    description:
+      "Electric device tracking platform with real-time status monitoring, device countability, interactive dashboards, and complaint management.",
+    image: `${process.env.PUBLIC_URL}/assets/Etrack.jpg`,
+    skills: ["MongoDB", "Express", "React", "Node.js", "JWT", "Socket.io"],
+    category: "Web",
+    github: "https://github.com/Gantedavamsikrishna/Etrack_Management",
+    demo: "https://etrack-student-ui.vercel.app/",
   },
   {
-    title: 'Security Attendance System',
-    description: 'A security attendance system that uses Thumb recognition to mark attendance of sucrity guards and staff.',
-    image: '//Security.png',
-    skills: ['ReactJS', 'Node.js', 'Express', 'Socket.io', 'MongoDB'],
-    category: 'Web',
-    github: 'https://github.com/Gantedavamsikrishna/Security-Attendance-System',
-    demo: 'https://security-attendance-system.vercel.app/'
+    title: "Security Attendance System",
+    description:
+      "A security attendance system that uses Thumb recognition to mark attendance of sucrity guards and staff.",
+    image: `${process.env.PUBLIC_URL}/assets/Security.png`,
+    skills: ["ReactJS", "Node.js", "Express", "Socket.io", "MongoDB"],
+    category: "Web",
+    github: "https://github.com/Gantedavamsikrishna/Security-Attendance-System",
+    demo: "https://security-attendance-system.vercel.app/",
   },
   {
-    title: 'Groomax',
-    description: 'A petgrooming web Application for pet services and grooming advance bookings , full of glasse transparent modals.',
-    image: './assets/groomax.png',
-    skills: ['HTML', 'CSS', 'javaScript', 'bootstrap', 'git','vercel'],
-    category: 'Web',
-    github: 'https://github.com',
-    demo: 'https://demo.com'
+    title: "Groomax",
+    description:
+      "A petgrooming web Application for pet services and grooming advance bookings , full of glasse transparent modals.",
+    image: `${process.env.PUBLIC_URL}/assets/groomax.png`,
+    skills: ["HTML", "CSS", "javaScript", "bootstrap", "git", "vercel"],
+    category: "Web",
+    github: "https://github.com",
+    demo: "https://demo.com",
   },
   // {
   //   title: 'Computer Vision Dashboard',
@@ -96,13 +99,14 @@ export const projects = [
 ];
 
 const Projects = () => {
-  const [activeFilter, setActiveFilter] = useState('All');
+  const [activeFilter, setActiveFilter] = useState("All");
 
-  const filters = ['All', 'Web', 'AI/ML', 'Mobile', 'Hardware'];
+  const filters = ["All", "Web", "AI/ML", "Mobile", "Hardware"];
 
-  const filteredProjects = activeFilter === 'All' 
-    ? projects 
-    : projects.filter(project => project.category === activeFilter);
+  const filteredProjects =
+    activeFilter === "All"
+      ? projects
+      : projects.filter((project) => project.category === activeFilter);
 
   return (
     <div className="min-h-screen pt-20">
@@ -118,7 +122,8 @@ const Projects = () => {
               My Projects
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-12">
-              A showcase of my work spanning web development, AI/ML, mobile apps, and hardware projects
+              A showcase of my work spanning web development, AI/ML, mobile
+              apps, and hardware projects
             </p>
 
             {/* Filter Buttons */}
@@ -127,7 +132,9 @@ const Projects = () => {
                 <button
                   key={filter}
                   onClick={() => setActiveFilter(filter)}
-                  className={`filter-button ${activeFilter === filter ? 'active' : ''}`}
+                  className={`filter-button ${
+                    activeFilter === filter ? "active" : ""
+                  }`}
                 >
                   {filter}
                 </button>
@@ -160,7 +167,9 @@ const Projects = () => {
               animate={{ opacity: 1 }}
               className="text-center py-20"
             >
-              <p className="text-gray-400 text-lg">No projects found for the selected category.</p>
+              <p className="text-gray-400 text-lg">
+                No projects found for the selected category.
+              </p>
             </motion.div>
           )}
         </div>
@@ -178,14 +187,12 @@ const Projects = () => {
               Interested in Collaborating?
             </h2>
             <p className="text-gray-300 text-lg mb-8">
-              I'm always open to discussing new projects and opportunities. Let's build something amazing together!
+              I'm always open to discussing new projects and opportunities.
+              Let's build something amazing together!
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="glow-button"
-              >
+              <a href="/contact" className="glow-button">
                 Get In Touch
               </a>
               <a

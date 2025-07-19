@@ -1,50 +1,61 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter, Mail, Hash, Award, Calendar, MapPin } from 'lucide-react';
-import SkillBadge from '../components/SkillBadge';
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  Github,
+  Linkedin,
+  Twitter,
+  Mail,
+  Hash,
+  Award,
+  Calendar,
+  MapPin,
+} from "lucide-react";
+import SkillBadge from "../components/SkillBadge";
 
 const About = () => {
   const skills = [
-    { name: 'HTML' },
-    { name: 'CSS' },
-    { name: 'JavaScript' },
-    { name: 'React.js' },
-    { name: 'Angular' },
-    { name: 'Node.js' },
-    { name: 'Spring Boot' },
-    { name: 'Java' },
-    { name: 'TypeScript' },
-    { name: 'DSA' },
-    { name: 'GitHub' },
+    { name: "HTML" },
+    { name: "CSS" },
+    { name: "JavaScript" },
+    { name: "React.js" },
+    { name: "Angular" },
+    { name: "Node.js" },
+    { name: "Spring Boot" },
+    { name: "Java" },
+    { name: "TypeScript" },
+    { name: "DSA" },
+    { name: "GitHub" },
   ];
 
   const experiences = [
     {
-      title: 'Full Stack Developer Intern',
-      company: 'T-Hub',
-      period: 'Mar 2025 - May 2025',
-      location: 'Remote',
-      description: 'Developed Etrack, a full-stack web application using the MERN stack with CRUD functionality and user authentication. Built RESTful APIs with Node.js/Express.js and designed responsive UI components using React.js. Implemented routing, form validation, tested APIs via Postman, and used Git for version control.',
+      title: "Full Stack Developer Intern",
+      company: "T-Hub",
+      period: "Mar 2025 - May 2025",
+      location: "Remote",
+      description:
+        "Developed Etrack, a full-stack web application using the MERN stack with CRUD functionality and user authentication. Built RESTful APIs with Node.js/Express.js and designed responsive UI components using React.js. Implemented routing, form validation, tested APIs via Postman, and used Git for version control.",
       achievements: [
-        'Developed Etrack, a full-stack web application using the MERN stack with CRUD functionality and user authentication.',
-        'Built RESTful APIs with Node.js/Express.js and designed responsive UI components using React.js.',
-        'Implemented routing, form validation, tested APIs via Postman, and used Git for version control.',
-        'Tech Stack: React.js, Node.js, Websockets, MongoDB, Github, Render, Vercel'
-      ]
+        "Developed Etrack, a full-stack web application using the MERN stack with CRUD functionality and user authentication.",
+        "Built RESTful APIs with Node.js/Express.js and designed responsive UI components using React.js.",
+        "Implemented routing, form validation, tested APIs via Postman, and used Git for version control.",
+        "Tech Stack: React.js, Node.js, Websockets, MongoDB, Github, Render, Vercel",
+      ],
     },
     {
-      title: 'Full Stack Developer Intern',
-      company: 'Nexora Enterprises',
-      period: 'May 2025 - July 2025',
-      location: 'Remote',
-      description: 'Built an e-commerce website with dynamic Admin Dashboard for efficient product management, including adding, updating, and removing beauty products. Integrated secure authentication for admin and users, ensuring role-based access control. Implemented product filtering techniques, enhancing user experience and search accuracy by 30%.',
+      title: "Full Stack Developer Intern",
+      company: "Nexora Enterprises",
+      period: "May 2025 - July 2025",
+      location: "Remote",
+      description:
+        "Built an e-commerce website with dynamic Admin Dashboard for efficient product management, including adding, updating, and removing beauty products. Integrated secure authentication for admin and users, ensuring role-based access control. Implemented product filtering techniques, enhancing user experience and search accuracy by 30%.",
       achievements: [
-        'Built an e-commerce website with dynamic Admin Dashboard for efficient product management, including adding, updating, and removing beauty products.',
-        'Integrated secure authentication for admin and users, ensuring role-based access control.',
-        'Implemented product filtering techniques, enhancing user experience and search accuracy by 30%.',
-        'Tech Stack: Angular, Spring Boot, Microservices, MongoDB, Docker, Render, Vercel'
-      ]
-    }
+        "Built an e-commerce website with dynamic Admin Dashboard for efficient product management, including adding, updating, and removing beauty products.",
+        "Integrated secure authentication for admin and users, ensuring role-based access control.",
+        "Implemented product filtering techniques, enhancing user experience and search accuracy by 30%.",
+        "Tech Stack: Angular, Spring Boot, Microservices, MongoDB, Docker, Render, Vercel",
+      ],
+    },
   ];
 
   const achievements = [
@@ -85,7 +96,8 @@ const About = () => {
               About Me
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              A passionate developer crafting the future of web applications through AI integration and innovative solutions
+              A passionate developer crafting the future of web applications
+              through AI integration and innovative solutions
             </p>
           </motion.div>
 
@@ -99,20 +111,26 @@ const About = () => {
             >
               <div className="relative">
                 <img
-                  src="./assets/my24.png"
+                  src={`${process.env.PUBLIC_URL}/assets/my24.png`}
                   alt="Profile"
                   className="w-full max-w-xs mx-auto rounded-2xl neon-shadow relative z-10"
                   style={{
-                    maskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
-                    WebkitMaskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
-                    filter: 'contrast(1.15) sepia(0.18) hue-rotate(-18deg)'
+                    maskImage:
+                      "linear-gradient(to bottom, black 85%, transparent 100%)",
+                    WebkitMaskImage:
+                      "linear-gradient(to bottom, black 85%, transparent 100%)",
+                    filter: "contrast(1.15) sepia(0.18) hue-rotate(-18deg)",
                   }}
                 />
               </div>
-              
+
               <div className="mt-8 text-center lg:text-left">
-                <h2 className="text-2xl font-bold mb-4 text-white">Vamsi Krishna</h2>
-                <p className="text-green-400 font-semibold mb-4">AI-Focused Full Stack Developer</p>
+                <h2 className="text-2xl font-bold mb-4 text-white">
+                  Vamsi Krishna
+                </h2>
+                <p className="text-green-400 font-semibold mb-4">
+                  AI-Focused Full Stack Developer
+                </p>
                 <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-6">
                   <div className="flex items-center gap-2 text-gray-300">
                     <MapPin size={16} />
@@ -124,16 +142,34 @@ const About = () => {
                   </div>
                 </div>
                 <div className="flex justify-center lg:justify-start gap-4">
-                  <a href="https://github.com/Gantedavamsikrishna" target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <a
+                    href="https://github.com/Gantedavamsikrishna"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-icon"
+                  >
                     <Github size={20} />
                   </a>
-                  <a href="https://www.linkedin.com/in/vamsi-krishna-ganteda/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <a
+                    href="https://www.linkedin.com/in/vamsi-krishna-ganteda/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-icon"
+                  >
                     <Linkedin size={20} />
                   </a>
-                  <a href="https://twitter.com/YOUR_TWITTER_HANDLE" target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <a
+                    href="https://twitter.com/YOUR_TWITTER_HANDLE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-icon"
+                  >
                     <Twitter size={20} />
                   </a>
-                  <a href="mailto:gantedavamsi2004@gmail.com" className="social-icon">
+                  <a
+                    href="mailto:gantedavamsi2004@gmail.com"
+                    className="social-icon"
+                  >
                     <Mail size={20} />
                   </a>
                 </div>
@@ -148,28 +184,46 @@ const About = () => {
               className="space-y-6"
             >
               <div>
-                <h3 className="text-2xl font-bold mb-4 text-green-400">About Me</h3>
+                <h3 className="text-2xl font-bold mb-4 text-green-400">
+                  About Me
+                </h3>
                 <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                  I'm a passionate full-stack developer with hands-on experience in building modern, responsive web applications using the MERN stack. My journey started with core web technologies and evolved through real-world projects and an internship focused on full-stack JavaScript development.
+                  I'm a passionate full-stack developer with hands-on experience
+                  in building modern, responsive web applications using the MERN
+                  stack. My journey started with core web technologies and
+                  evolved through real-world projects and an internship focused
+                  on full-stack JavaScript development.
                 </p>
                 <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                  Over the past few years, I’ve developed and contributed to various dynamic web applications — from admin dashboards and product management systems to user-focused interfaces — blending efficient backend APIs with intuitive front-end design.
+                  Over the past few years, I’ve developed and contributed to
+                  various dynamic web applications — from admin dashboards and
+                  product management systems to user-focused interfaces —
+                  blending efficient backend APIs with intuitive front-end
+                  design.
                 </p>
                 <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                  While the MERN stack is my core strength, I also work comfortably with Angular and Spring Boot, allowing me to adapt to diverse tech environments and project needs.
+                  While the MERN stack is my core strength, I also work
+                  comfortably with Angular and Spring Boot, allowing me to adapt
+                  to diverse tech environments and project needs.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold mb-4 text-green-400">What Drives Me</h3>
+                <h3 className="text-2xl font-bold mb-4 text-green-400">
+                  What Drives Me
+                </h3>
                 <ul className="space-y-3 text-gray-300">
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-green-400 rounded-full mt-2"></div>
-                    <span>Creating clean, scalable, and real-world web solutions</span>
+                    <span>
+                      Creating clean, scalable, and real-world web solutions
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-green-400 rounded-full mt-2"></div>
-                    <span>Continuously learning and exploring new technologies</span>
+                    <span>
+                      Continuously learning and exploring new technologies
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-green-400 rounded-full mt-2"></div>
@@ -177,7 +231,9 @@ const About = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-green-400 rounded-full mt-2"></div>
-                    <span>Collaborating with teams and sharing knowledge with peers</span>
+                    <span>
+                      Collaborating with teams and sharing knowledge with peers
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -199,9 +255,10 @@ const About = () => {
               Technical Skills
             </h2>
             <p className="text-gray-300 text-lg mb-12">
-              A comprehensive toolkit for building modern, AI-powered applications
+              A comprehensive toolkit for building modern, AI-powered
+              applications
             </p>
-            
+
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
               {skills.map((skill, index) => (
                 <SkillBadge key={skill.name} name={skill.name} index={index} />
@@ -236,12 +293,16 @@ const About = () => {
                 className="relative pl-8 border-l-2 border-green-400/30"
               >
                 <div className="absolute -left-2 top-0 w-4 h-4 bg-green-400 rounded-full"></div>
-                
+
                 <div className="bg-white/5 backdrop-blur-10 border border-white/10 rounded-xl p-6">
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-1">{exp.title}</h3>
-                      <p className="text-green-400 font-semibold">{exp.company}</p>
+                      <h3 className="text-xl font-bold text-white mb-1">
+                        {exp.title}
+                      </h3>
+                      <p className="text-green-400 font-semibold">
+                        {exp.company}
+                      </p>
                     </div>
                     <div className="text-gray-400 text-sm mt-2 md:mt-0">
                       <div className="flex items-center gap-2 mb-1">
@@ -254,14 +315,19 @@ const About = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   <p className="text-gray-300 mb-4">{exp.description}</p>
-                  
+
                   <div>
-                    <h4 className="text-sm font-semibold text-green-400 mb-2">Key Achievements:</h4>
+                    <h4 className="text-sm font-semibold text-green-400 mb-2">
+                      Key Achievements:
+                    </h4>
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-gray-300 text-sm">
+                        <li
+                          key={idx}
+                          className="flex items-start gap-2 text-gray-300 text-sm"
+                        >
                           <div className="w-1.5 h-1.5 bg-green-400 rounded-full mt-2"></div>
                           {achievement}
                         </li>
