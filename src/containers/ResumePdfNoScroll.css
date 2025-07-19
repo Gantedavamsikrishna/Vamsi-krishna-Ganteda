@@ -1,0 +1,32 @@
+/* Hide scrollbars for the PDF viewer */
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  overflow-x: hidden !important;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Ensure all PDF pages are displayed vertically and fully visible */
+.rpv-core__viewer {
+  overflow: visible !important;
+  max-height: none !important;
+  height: auto !important;
+  overflow-x: hidden !important;
+}
+
+/* Remove aggressive child element width forcing */
+/* .rpv-core__viewer *,
+.rpv-core__viewer canvas,
+.rpv-core__viewer div {
+  max-width: 100% !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+} */
+
+/* Prevent horizontal scrolling on the body and html as well */
+body, html {
+  overflow-x: hidden !important;
+} 
