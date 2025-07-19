@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.99289d96.css",
-    "main.js": "/static/js/main.ee9242ff.js",
-    "index.html": "/index.html",
-    "main.99289d96.css.map": "/static/css/main.99289d96.css.map",
-    "main.ee9242ff.js.map": "/static/js/main.ee9242ff.js.map"
+    "main.css": "/Vamsi-Krishna-Ganteda/static/css/main.99289d96.css",
+    "main.js": "/Vamsi-Krishna-Ganteda/static/js/main.ee9242ff.js",
+    "index.html": "/Vamsi-Krishna-Ganteda/index.html",
+    "main.99289d96.css.map": "/Vamsi-Krishna-Ganteda/static/css/main.99289d96.css.map",
+    "main.ee9242ff.js.map": "/Vamsi-Krishna-Ganteda/static/js/main.ee9242ff.js.map"
   },
   "entrypoints": [
     "static/css/main.99289d96.css",
