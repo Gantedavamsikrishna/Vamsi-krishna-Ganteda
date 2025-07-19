@@ -1,25 +1,25 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import "./App.css";
 
 // Components
-import Navbar from './components/Navbar';
-import CustomCursor from './components/CustomCursor';
+import Navbar from "./components/Navbar";
+import CustomCursor from "./components/CustomCursor";
 
 // Pages
-import Home from './containers/Home';
-import About from './containers/About';
-import Projects from './containers/Projects';
-import Contact from './containers/Contact';
-import Snippets from './containers/Snippets';
-import Publications from './containers/Publications';
-import Resume from './containers/Resume';
+import Home from "./containers/Home";
+import About from "./containers/About";
+import Projects from "./containers/Projects";
+import Contact from "./containers/Contact";
+import Snippets from "./containers/Snippets";
+import Publications from "./containers/Publications";
+import Resume from "./containers/Resume";
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/Vamsi-Krishna-Ganteda">
         <CustomCursor />
         <Navbar />
         <AnimatePresence mode="wait">
