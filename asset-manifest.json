@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Vamsi-krishna-Ganteda/static/css/main.99289d96.css",
-    "main.js": "/Vamsi-krishna-Ganteda/static/js/main.ba7d799d.js",
-    "index.html": "/Vamsi-krishna-Ganteda/index.html",
-    "main.99289d96.css.map": "/Vamsi-krishna-Ganteda/static/css/main.99289d96.css.map",
-    "main.ba7d799d.js.map": "/Vamsi-krishna-Ganteda/static/js/main.ba7d799d.js.map"
+    "main.css": "/static/css/main.99289d96.css",
+    "main.js": "/static/js/main.9654dd45.js",
+    "index.html": "/index.html",
+    "main.99289d96.css.map": "/static/css/main.99289d96.css.map",
+    "main.9654dd45.js.map": "/static/js/main.9654dd45.js.map"
   },
   "entrypoints": [
     "static/css/main.99289d96.css",
-    "static/js/main.ba7d799d.js"
+    "static/js/main.9654dd45.js"
   ]
 }
