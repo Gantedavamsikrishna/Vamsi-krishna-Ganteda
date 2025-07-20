@@ -19,7 +19,7 @@ import Resume from "./containers/Resume";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Router basename={process.env.PUBLIC_URL}>
         <CustomCursor />
         <Navbar />
         <AnimatePresence mode="wait">
@@ -33,7 +33,7 @@ function App() {
             <Route path="/resume" element={<Resume />} />
           </Routes>
         </AnimatePresence>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
