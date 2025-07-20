@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gantedavamsikrishna.github.io/Vamsi-krishna-Ganteda",
+  "homepage": "https://www.vamsikrishna.tech",
   "dependencies": {
     "@react-pdf-viewer/core": "^3.12.0",
     "axios": "^1.8.4",
