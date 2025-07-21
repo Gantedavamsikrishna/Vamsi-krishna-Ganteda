@@ -28,7 +28,7 @@ const CustomCursor = () => {
 
   return (
     <div
-      className={`cursor ${isHovering ? 'scale-150' : ''}`}
+      className={`cursor ${isHovering ? 'scale-75' : ''}`}
       style={{
         left: `${mousePosition.x}px`,
         top: `${mousePosition.y}px`,

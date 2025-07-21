@@ -432,3 +432,7 @@ body {
     0 2px 12px 0 rgba(30, 41, 59, 0.18), /* subtle dark blue-gray shadow */
     0 6px 24px 0 rgba(30, 41, 59, 0.12); /* even softer */
 }
+
+.scale-75 {
+  transform: scale(0.75);
+}

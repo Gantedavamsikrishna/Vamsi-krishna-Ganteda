@@ -83,8 +83,7 @@ const Home = () => {
               Vamsi Krishna
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-              AI-Focused Full Stack Developer crafting the future of web
-              applications
+              Passionate Full Stack Developer dedicated to building impactful and innovative web experiences.
             </p>
 
             {/* Social Icons */}

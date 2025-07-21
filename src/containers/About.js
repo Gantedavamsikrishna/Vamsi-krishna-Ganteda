@@ -32,7 +32,7 @@ const About = () => {
       title: "Full Stack Developer Intern",
       company: "T-Hub",
       period: "Mar 2025 - May 2025",
-      location: "Remote",
+      location: "On-site",
       description:
         "Developed Etrack, a full-stack web application using the MERN stack with CRUD functionality and user authentication. Built RESTful APIs with Node.js/Express.js and designed responsive UI components using React.js. Implemented routing, form validation, tested APIs via Postman, and used Git for version control.",
       achievements: [
@@ -43,17 +43,17 @@ const About = () => {
       ],
     },
     {
-      title: "Full Stack Developer Intern",
+      title: "Backend Developer Intern",
       company: "Nexora Enterprises",
       period: "May 2025 - July 2025",
       location: "Remote",
-      description:
-        "Built an e-commerce website with dynamic Admin Dashboard for efficient product management, including adding, updating, and removing beauty products. Integrated secure authentication for admin and users, ensuring role-based access control. Implemented product filtering techniques, enhancing user experience and search accuracy by 30%.",
+      description:"During my internship at Nexora Enterprise, I worked as a backend developer on Locate, a MERN stack-based application focused on location tracking and secure access. I collaborated with a team to design and implement robust authentication systems and role-based access controls. The project emphasized security, scalability, and efficient API design using Node.js and TypeScript.",
       achievements: [
-        "Built an e-commerce website with dynamic Admin Dashboard for efficient product management, including adding, updating, and removing beauty products.",
-        "Integrated secure authentication for admin and users, ensuring role-based access control.",
-        "Implemented product filtering techniques, enhancing user experience and search accuracy by 30%.",
-        "Tech Stack: Angular, Spring Boot, Microservices, MongoDB, Docker, Render, Vercel",
+        "Developed secure JWT-based authentication and role-based authorization for multiple user types (admin, user, etc.).",
+        "Implemented middleware-based route protection, ensuring access control across the application",
+        "Worked with the team to integrate error handling, logging, and token expiration strategies for production-readiness",
+        "Collaborated via Git/GitHub, participated in regular stand-ups, and contributed to code reviews and documentation",
+         "Tech Stack:MERN Stack , Node.js with TypeScript"
       ],
     },
   ];

@@ -7,7 +7,7 @@ export const projects = [
     title: "Etrack",
     description:
       "Electric device tracking platform with real-time status monitoring, device countability, interactive dashboards, and complaint management.",
-    image: `${process.env.PUBLIC_URL}/assets/Etrack.jpg`,
+    image: `${process.env.PUBLIC_URL}/assets/dashboard.png`,
     skills: ["MongoDB", "Express", "React", "Node.js", "JWT", "Socket.io"],
     category: "Web",
     github: "https://github.com/Gantedavamsikrishna/Etrack_Management",
@@ -101,7 +101,7 @@ export const projects = [
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const filters = ["All", "Web", "AI/ML", "Mobile", "Hardware"];
+  const filters = ["All", "Web"];
 
   const filteredProjects =
     activeFilter === "All"
@@ -196,7 +196,7 @@ const Projects = () => {
                 Get In Touch
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/Gantedavamsikrishna"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glow-button-secondary"
