@@ -1,13 +1,42 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
+import { Axios } from "axios";
 
 export const projects = [
+  {
+    title: "CodeEditor",
+    description:
+      "Online Code Editor – A browser-based IDE built with React and Vite, featuring AI-powered coding assistance, syntax highlighting, multi-language support, authentication.",
+    image: `${process.env.PUBLIC_URL}/assets/image.png`,
+    skills: [
+      "React",
+      "Node.js",
+      "Python",
+      "GeminiAPI",
+      "MongoDB",
+      "JWT",
+      "Redis",
+    ],
+    category: "AI",
+    github: "https://github.com/Gantedavamsikrishna/CodeAI",
+    demo: "a",
+  },
+  {
+    title: "Movix",
+    description:
+      "Movix is a modern movie discovery web application built with React and Vite. It allows users to browse trending, popular, and top-rated movies, view details, watch trailers, and search for movies using The Movie Database (TMDB) API.",
+    image: `${process.env.PUBLIC_URL}/assets/Movix.png`,
+    skills: ["React", "TmdbAPI", "Redux", "Axios", "git"],
+    category: "Web",
+    github: "https://github.com/Gantedavamsikrishna/Movixx",
+    demo: "https://movixx-rho.vercel.app/",
+  },
   {
     title: "Etrack",
     description:
       "Electric device tracking platform with real-time status monitoring, device countability, interactive dashboards, and complaint management.",
-    image: `${process.env.PUBLIC_URL}/assets/dashboard.png`,
+    image: `${process.env.PUBLIC_URL}/assets/Etrack.png`,
     skills: ["MongoDB", "Express", "React", "Node.js", "JWT", "Socket.io"],
     category: "Web",
     github: "https://github.com/Gantedavamsikrishna/Etrack_Management",

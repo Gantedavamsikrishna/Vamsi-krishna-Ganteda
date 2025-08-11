@@ -1,12 +1,22 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Download, Eye, Github, Linkedin, Twitter, Hash, Mail, Phone, MapPin } from 'lucide-react';
-import { Worker, Viewer } from '@react-pdf-viewer/core';
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import './ResumePdfNoScroll.css';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  Download,
+  Eye,
+  Github,
+  Linkedin,
+  Twitter,
+  Hash,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
+import { Worker, Viewer } from "@react-pdf-viewer/core";
+import "@react-pdf-viewer/core/lib/styles/index.css";
+import "./ResumePdfNoScroll.css";
 
 const Resume = () => {
-  const [showPreview, setShowPreview] = useState(false);
+  const [showPreview, setShowPreview] = useState(true);
 
   return (
     <div className="min-h-screen pt-20">
@@ -26,7 +36,7 @@ const Resume = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <a
                 href="./assets/VamsiKrishnaGanteda.pdf"
-                download="GantedaVamsiKrishna.pdf"
+                download="VamsiKrishnaGanteda.pdf"
                 className="glow-button"
               >
                 <Download size={20} />
@@ -37,20 +47,31 @@ const Resume = () => {
                 className="glow-button-secondary"
               >
                 <Eye size={20} />
-                {showPreview ? 'Hide Preview' : 'View Resume'}
+                {showPreview ? "Hide Preview" : "View Resume"}
               </button>
             </div>
             {/* Embedded PDF Resume (only show on preview) */}
             {showPreview && (
-              <div className="w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl bg-white no-scrollbar" style={{height: 'auto', maxHeight: 'none'}}>
-                <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
+              <div
+                className="w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl bg-white no-scrollbar"
+                style={{ height: "auto", maxHeight: "none" }}
+              >
+                <Worker
+                  workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}
+                >
                   <Viewer
                     fileUrl="./assets/VamsiKrishnaGanteda.pdf"
                     defaultScale="PageWidth"
                     theme="light"
                     renderToolbar={null}
-                    renderLoader={() => <div className="text-center py-8">Loading resume...</div>}
-                    style={{width: '100%', border: 'none', overflow: 'hidden'}}
+                    renderLoader={() => (
+                      <div className="text-center py-8">Loading resume...</div>
+                    )}
+                    style={{
+                      width: "100%",
+                      border: "none",
+                      overflow: "hidden",
+                    }}
                   />
                 </Worker>
               </div>
@@ -72,14 +93,12 @@ const Resume = () => {
               Ready to Work Together?
             </h2>
             <p className="text-gray-300 mb-8">
-              I'm currently open to new opportunities and exciting projects. Let's discuss how I can contribute to your team.
+              I'm currently open to new opportunities and exciting projects.
+              Let's discuss how I can contribute to your team.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="glow-button"
-              >
+              <a href="/contact" className="glow-button">
                 Contact Me
               </a>
               <a
