@@ -35,7 +35,7 @@ const Resume = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <a
-                href="./assets/VamsiKrishnaGanteda.pdf"
+                href="./assets/vamsig.pdf"
                 download="VamsiKrishnaGanteda.pdf"
                 className="glow-button"
               >
@@ -60,7 +60,7 @@ const Resume = () => {
                   workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}
                 >
                   <Viewer
-                    fileUrl="./assets/VamsiKrishnaGanteda.pdf"
+                    fileUrl="./assets/vamsig.pdf"
                     defaultScale="PageWidth"
                     theme="light"
                     renderToolbar={null}
