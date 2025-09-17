@@ -4,7 +4,6 @@ import ProjectCard from "../components/ProjectCard";
 import { Axios } from "axios";
 
 export const projects = [
- 
   {
     title: "CodeEditor",
     description:
@@ -21,7 +20,7 @@ export const projects = [
     ],
     category: "AI",
     github: "https://github.com/Gantedavamsikrishna/CodeAI",
-    demo: "https://code-ai-gilt.vercel.app/",
+    demo: "https://aiodeeditor.vercel.app/",
   },
   {
     title: "Movix",
@@ -33,8 +32,8 @@ export const projects = [
     github: "https://github.com/Gantedavamsikrishna/Movixx",
     demo: "https://movixx-rho.vercel.app/",
   },
- 
-   {
+
+  {
     title: "Bus Reservation System RestAPIs",
     description:
       "A comprehensive bus reservation system built with Spring Boot, featuring RESTful APIs, route management, user auth, and reservation tracking.",
@@ -47,13 +46,13 @@ export const projects = [
       "REST APIs",
       "JPA/Hibernate",
       "Maven",
-      "Postman"
+      "Postman",
     ],
     category: "Backend",
     github: "https://github.com/Gantedavamsikrishna/Bus_Reservation",
     demo: "https://github.com/Gantedavamsikrishna/Bus_Reservation",
   },
-   {
+  {
     title: "Etrack",
     description:
       "Electric device tracking platform with real-time status monitoring, device countability, interactive dashboards, and complaint management.",
@@ -63,7 +62,7 @@ export const projects = [
     github: "https://github.com/Gantedavamsikrishna/Etrack_Management",
     demo: "https://etrack-student-ui.vercel.app/",
   },
-   {
+  {
     title: "GlowGroove",
     description:
       "Beauty Care - A modern web platform providing personalized beauty products and expert advice, built with Angular, Bootstrap, Spring Boot, and MongoDB for a seamless user experience.",
@@ -87,7 +86,7 @@ export const projects = [
       "A security attendance system that uses Thumb recognition to mark attendance of sucrity guards and staff.",
     image: `${process.env.PUBLIC_URL}/assets/Security.png`,
     skills: ["ReactJS", "Node.js", "Express", "Socket.io", "MongoDB"],
-     category: "Backend",
+    category: "Backend",
     github: "https://github.com/Gantedavamsikrishna/Security-Attendance-System",
     demo: "https://security-attendance-system.vercel.app/",
   },
@@ -101,7 +100,6 @@ export const projects = [
     github: "https://github.com/Gantedavamsikrishna/Pet-GrooMing",
     demo: "https://pet-groo-ming.vercel.app/",
   },
-
 ];
 
 const Projects = () => {

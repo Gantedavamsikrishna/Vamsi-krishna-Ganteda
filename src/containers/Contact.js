@@ -1,24 +1,35 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Hash, Send, CheckCircle } from 'lucide-react';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Github,
+  Linkedin,
+  Twitter,
+  Hash,
+  Send,
+  CheckCircle,
+} from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1394293096316928000/digmCJLaimCOypT9rtbY_sIA_MtYosD-vwM164AracbpaFkUXtCiIct8fzAWjEcEVITK";
+  const DISCORD_WEBHOOK_URL =
+    "https://discord.com/api/webhooks/1394293096316928000/digmCJLaimCOypT9rtbY_sIA_MtYosD-vwM164AracbpaFkUXtCiIct8fzAWjEcEVITK";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     const discordMessage = {
-      content: `**New Contact Form Submission**\n\n**Name:** ${formData.name}\n**Email:** ${formData.email}\n**Message:** ${formData.message}`
+      content: `**New Contact Form Submission**\n\n**Name:** ${formData.name}\n**Email:** ${formData.email}\n**Message:** ${formData.message}`,
     };
 
     try {
@@ -29,7 +40,7 @@ const Contact = () => {
       });
       setIsSubmitting(false);
       setIsSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: "", email: "", message: "" });
 
       setTimeout(() => {
         setIsSubmitted(false);
@@ -43,50 +54,50 @@ const Contact = () => {
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const contactInfo = [
     {
       icon: Mail,
-      label: 'Email',
-      value: 'vamsiganteda@gmail.com',
-      href: 'mailto:vamsiganteda@gmail.com'
+      label: "Email",
+      value: "vamsiganteda@gmail.com",
+      href: "mailto:gantedavamsi2004@gmail.com",
     },
     {
       icon: Phone,
-      label: 'Phone',
-      value: '7036582951',
-      href: 7036582951
+      label: "Phone",
+      value: "7036582951",
+      href: 7036582951,
     },
     {
       icon: MapPin,
-      label: 'Location',
-      value: 'India',
-      href: null
-    }
+      label: "Location",
+      value: "India",
+      href: null,
+    },
   ];
 
   const socialLinks = [
     {
       icon: Github,
-      label: 'GitHub',
-      href: 'https://github.com/Gantedavamsikrishna',
-      color: 'hover:text-gray-300'
+      label: "GitHub",
+      href: "https://github.com/Gantedavamsikrishna",
+      color: "hover:text-gray-300",
     },
     {
       icon: Linkedin,
-      label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/vamsi-krishna-ganteda/',
-      color: 'hover:text-blue-400'
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/vamsi-krishna-ganteda/",
+      color: "hover:text-blue-400",
     },
     {
       icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com/YOUR_TWITTER_HANDLE',
-      color: 'hover:text-blue-400'
-    }
+      label: "Twitter",
+      href: "https://twitter.com/YOUR_TWITTER_HANDLE",
+      color: "hover:text-blue-400",
+    },
   ];
 
   return (
@@ -103,7 +114,8 @@ const Contact = () => {
               Get In Touch
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Ready to bring your ideas to life? Let's discuss your next project and create something amazing together.
+              Ready to bring your ideas to life? Let's discuss your next project
+              and create something amazing together.
             </p>
           </motion.div>
 
@@ -115,8 +127,10 @@ const Contact = () => {
               transition={{ delay: 0.2 }}
               className="bg-white/5 backdrop-blur-10 border border-white/10 rounded-2xl p-8"
             >
-              <h2 className="text-2xl font-bold mb-6 text-white">Send me a message</h2>
-              
+              <h2 className="text-2xl font-bold mb-6 text-white">
+                Send me a message
+              </h2>
+
               {isSubmitted && (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -124,13 +138,18 @@ const Contact = () => {
                   className="mb-6 p-4 bg-green-400/10 border border-green-400/20 rounded-lg flex items-center gap-3"
                 >
                   <CheckCircle className="text-green-400" size={20} />
-                  <span className="text-green-400">Message sent successfully! I'll get back to you soon.</span>
+                  <span className="text-green-400">
+                    Message sent successfully! I'll get back to you soon.
+                  </span>
                 </motion.div>
               )}
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-300 mb-2"
+                  >
                     Your Name
                   </label>
                   <input
@@ -144,9 +163,12 @@ const Contact = () => {
                     placeholder="krishna"
                   />
                 </div>
-                
+
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-300 mb-2"
+                  >
                     Email Address
                   </label>
                   <input
@@ -160,9 +182,12 @@ const Contact = () => {
                     placeholder="krishna@example.com"
                   />
                 </div>
-                
+
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-300 mb-2"
+                  >
                     Message
                   </label>
                   <textarea
@@ -176,7 +201,7 @@ const Contact = () => {
                     placeholder="Tell me about your project or just say hello!"
                   />
                 </div>
-                
+
                 <button
                   type="submit"
                   disabled={isSubmitting}
@@ -205,13 +230,23 @@ const Contact = () => {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-2xl font-bold mb-6 text-white">Contact Information</h2>
+                <h2 className="text-2xl font-bold mb-6 text-white">
+                  Contact Information
+                </h2>
                 <ul className="space-y-4">
                   {contactInfo.map((info, idx) => (
-                    <li key={info.label} className="flex items-center gap-4 text-gray-300">
+                    <li
+                      key={info.label}
+                      className="flex items-center gap-4 text-gray-300"
+                    >
                       <info.icon size={20} className="text-green-400" />
                       {info.href ? (
-                        <a href={info.href} className="hover:underline" target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={info.href}
+                          className="hover:underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           {info.value}
                         </a>
                       ) : (
@@ -222,7 +257,9 @@ const Contact = () => {
                 </ul>
               </div>
               <div>
-                <h2 className="text-2xl font-bold mb-6 text-white">Social Links</h2>
+                <h2 className="text-2xl font-bold mb-6 text-white">
+                  Social Links
+                </h2>
                 <div className="flex flex-wrap gap-4">
                   {socialLinks.map((link) => (
                     <a
@@ -255,23 +292,31 @@ const Contact = () => {
             <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
               Current Availability
             </h2>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white/5 backdrop-blur-10 border border-white/10 rounded-xl p-6">
                 <div className="w-3 h-3 bg-green-400 rounded-full mx-auto mb-3"></div>
-                <h3 className="text-lg font-semibold text-white mb-2">Open for Projects</h3>
-                <p className="text-gray-400 text-sm">Available for freelance and contract work</p>
+                <h3 className="text-lg font-semibold text-white mb-2">
+                  Open for Projects
+                </h3>
+                <p className="text-gray-400 text-sm">
+                  Available for freelance and contract work
+                </p>
               </div>
-              
+
               <div className="bg-white/5 backdrop-blur-10 border border-white/10 rounded-xl p-6">
                 <div className="w-3 h-3 bg-yellow-400 rounded-full mx-auto mb-3"></div>
-                <h3 className="text-lg font-semibold text-white mb-2">Response Time</h3>
+                <h3 className="text-lg font-semibold text-white mb-2">
+                  Response Time
+                </h3>
                 <p className="text-gray-400 text-sm">Usually within 24 hours</p>
               </div>
-              
+
               <div className="bg-white/5 backdrop-blur-10 border border-white/10 rounded-xl p-6">
                 <div className="w-3 h-3 bg-blue-400 rounded-full mx-auto mb-3"></div>
-                <h3 className="text-lg font-semibold text-white mb-2">Time Zone</h3>
+                <h3 className="text-lg font-semibold text-white mb-2">
+                  Time Zone
+                </h3>
                 <p className="text-gray-400 text-sm">PST (UTC-8)</p>
               </div>
             </div>
